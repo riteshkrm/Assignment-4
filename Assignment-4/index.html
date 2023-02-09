@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    
+
+    <style>
+
+        body{
+            display: block;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+
+    
+
+        @media screen and (min-width: 1024px) and (max-width: 1440px){
+            body{
+                display: block;
+                background-color: green;
+                text-align: center;
+            }
+
+            .heading,
+            .heading2,
+            .heading3,
+            .heading4{
+                display: none ;
+            }
+            
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            body{
+                display: block;
+                background-color: rgb(138, 102, 5);
+                text-align: center;
+            }
+
+            .heading,
+            .heading1,
+            .heading3,
+            .heading4{
+                display: none;
+            }
+            
+        }
+
+        @media screen and (min-width: 426px) and (max-width: 768px){
+            body{
+                display: block;
+                background-color: lightskyblue;
+                text-align: center;
+            }
+
+            .heading,
+            .heading1,
+            .heading2,
+            .heading4{
+                display: none;
+            }
+            
+        }
+
+        @media screen and (min-width: 1px) and (max-width: 426px){
+            body{
+                display: block;
+                background-color: brown;
+                text-align: center;
+            }
+
+            .heading,
+            .heading1,
+            .heading2,
+            .heading3{
+                display: none;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>This is a Media Query demo page.</h1>
+    </div>
+
+    <div class="heading1">
+        <h1>This is a Media Query demo page.</h1>
+        <h1>Screen size : 1440px</h1>
+    </div>
+
+    <div class="heading2">
+        <h1>This is a Media Query demo page.</h1>
+        <h1>Screen size : 1024px</p>
+    </div>
+
+    <div class="heading3">
+        <h1>This is a Media Query demo page.</h1>
+        <h1>Screen size : 768px</h1>
+    </div>
+
+    <div class="heading4">
+        <h1>This is a Media Query demo page.</h1>
+        <h1>Screen size : 425px</h1>
+    </div>
+</body>
+</html>
